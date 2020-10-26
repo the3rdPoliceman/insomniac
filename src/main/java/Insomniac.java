@@ -22,15 +22,15 @@ public class Insomniac
         Arguments result = new Arguments();
 
         int index = 0;
-        while(index < args.length){
-            index++;
+        while(args.length > index){
             String nextArg = args[index];
+            index++;
 
-            if (nextArg == "-w"){
+            if (nextArg.equalsIgnoreCase("-w")){
                 result.waitTime = Integer.parseInt(args[index]);
                 index++;
             }
-            else if (nextArg == "-d"){
+            else if (nextArg.equalsIgnoreCase("-d")){
                 result.movementDistance = Integer.parseInt(args[index]);
                 index++;
             }

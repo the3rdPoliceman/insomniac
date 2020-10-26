@@ -1,4 +1,4 @@
 # insomniac
 
-Usage:
-java -classpath insomniac.jar Insomniac -w 5000 -d 100
+Usage Example (will move cursor 10 pixels every 90 seconds):  
+java -classpath insomniac.jar Insomniac -w 90000 -d 10
